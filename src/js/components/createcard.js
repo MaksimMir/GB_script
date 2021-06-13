@@ -7,12 +7,17 @@ export default class CreateCard{
     }
 
     init() {
-        for (let i = 0; i < this.index; i++) {
-            const elem = this.arr[this.randomInteger()];
-            const card = this.createCard(elem);
-            this.url.insertAdjacentHTML('beforeend', card);
-        };
-        
+        let sum = 0;
+        try {
+            for (let i = 0; i < this.index; i++) {
+                const elem = this.arr[this.randomInteger()];
+                const card = this.createCard(elem);
+                this.url.insertAdjacentHTML('beforeend', card);
+                sum += parseInt(elem.price.slice(1));
+            };
+        } catch (error) {}
+
+        console.log(sum);
     }
 
     createCard(obj) {
