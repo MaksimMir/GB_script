@@ -2,7 +2,7 @@ import product from './components/product';
 import CreateCard from './components/createcard';
 import {CartRender} from './components/cart';
 import {setItem} from './components/db';
-import {Order, Composite} from './components/fast_food';
+
 
 window.addEventListener('load', () => {
     'use strict';
@@ -31,14 +31,5 @@ window.addEventListener('load', () => {
             cart.renderCart();
         }); 
     } catch (error) {};
-
-    try {
-        const products = new Composite();
-        document.querySelector('.food').addEventListener('click', () => {
-            products.add(new Order().createOrder());
-            console.log(`Price = ${products.price}, Calories = ${products.calories}`);
-        })
-    } catch (error) {}
-
     
 })
