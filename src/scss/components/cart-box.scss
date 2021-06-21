@@ -1,0 +1,54 @@
+.cart_box {
+    position: relative;
+    box-shadow: 17px 19px 24px rgba($color: #000000, $alpha: .2);
+    width: 650px;
+    height: 300px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    &-img {
+        height: 100%;
+    }
+    &-content {
+        padding: 22px 0 0 31px;
+    }
+    &-brand, &-category {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &-values {
+        margin-top: 42px;
+        & li {
+            font-size: 22px;
+            line-height: 26px;
+            color: rgb(77, 77, 77);
+        }
+    }
+    &-item {
+        margin-left: 10px;
+        &.price {
+            color: red;
+        }
+        &.quantity {
+            padding: 5px;
+            width: 50px;
+            font-size: 20px;
+            overflow: hidden;
+            border: 1px solid rgb(170, 170, 170);
+        }
+    }
+    &-close {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        border: none;
+        outline: none;
+        background-color: inherit;
+        font-size: 24px;
+        font-weight: 100;
+        transition: all .3s;
+        &:hover {
+            color: red;
+            transform: rotate(90deg);
+        }
+    }
+}

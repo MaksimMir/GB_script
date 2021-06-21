@@ -1,0 +1,63 @@
+.cart {
+    margin-top: 55px;
+    &_place {
+        justify-content: space-between;
+    }
+    &_content {
+        &-btns {
+            margin-top: 70px;
+            justify-content: space-between;
+        }
+    }
+    &_check {
+        width: 360px;
+        &-form {
+            width: 340px;
+        }
+        &-title {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            margin-bottom: 20px;
+        }
+        &-input {
+            padding: 16px 17px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 300;
+            border: 1px solid rgb(119, 119, 119);
+            line-height: 17px;
+            outline: none;
+            &::placeholder {
+                color: lighten(rgb(61, 61, 61), 50%);
+            }
+        }
+        &-total {
+            margin-top: 57px;
+            padding: 44px 42px;
+            background-color: rgb(200, 200, 200);
+        }
+        &-subtotal {
+            font-size: 11px;
+            line-height: 13px;
+            text-transform: uppercase;
+            text-align: right;
+            margin-bottom: 12px;
+        }
+        &-grandtotal {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 19px;
+            text-transform: uppercase;
+            text-align: right;
+            margin-bottom: 21px;
+            & span {
+                color: red;
+                font-weight: 400;
+            }
+        }
+        &-subtotal span, &-grandtotal span {
+            padding-left: 20px;
+        }
+    }
+}

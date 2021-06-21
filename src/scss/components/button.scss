@@ -1,0 +1,58 @@
+.btn {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 11px 38px;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.1em;
+    line-height: 19px;
+    transition: all .7s;
+    &_red {
+        border: 1px solid rgb(228, 66, 66);
+        color: rgb(228, 66, 66);
+        &:hover {
+            background-color: rgb(228, 66, 66);
+            color: white;
+        } 
+        &-check {
+            width: 100%;
+            background-color: rgb(228, 66, 66);
+            color: white;
+            padding: 14px 25px;
+            text-transform: uppercase;
+            margin-top: 17px;
+            outline: none;
+            border: none;
+            &:hover {
+                box-shadow: 0 0 10px darken(rgb(228, 66, 66), 20%) inset;
+            }
+        }
+    }
+    &_black {
+        border: 1px solid rgb(61, 61, 61);
+        color: rgb(61, 61, 61);
+        text-transform: uppercase;
+        margin: 0 10px;
+        &:hover {
+            box-shadow: 0 0 5px rgb(61, 61, 61) inset;
+        }
+    }
+    &_check {
+        width: 130px;
+        border: 1px solid rgb(61, 61, 61);
+        font-size: 11px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 14px;
+        padding: 14px 18px;
+        &:hover {
+            box-shadow: 0 0 3px rgb(61, 61, 61) inset;
+        }
+    }
+    &_block {
+        display: block;
+    }
+}

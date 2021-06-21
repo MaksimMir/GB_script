@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Cart</title>
+</head>
+<body>
+            
+    <div class="cart">
+        <div class="container">
+            <div class="cart_place row">
+                <div class="cart_content">
+                    <div class="cart_content-products"></div>
+                    <div class="cart_content-btns row">
+                        <a href="#" class="btn btn_black clear">CLEAR SHOPPING CART</a>
+                        <a href="index.html" class="btn btn_black">CONTINUE SHOPPING</a>
+                    </div>
+                </div>
+                <div class="cart_check flex-column">
+                    <form class="cart_check-form flex-column">
+                        <p class="cart_check-title">SHIPPING ADRESS</p>
+                        <input class="cart_check-input" type="text" placeholder="Bangladesh" required>
+                        <input class="cart_check-input" type="text" placeholder="State" required>
+                        <input class="cart_check-input" type="text" placeholder="Postcode / Zip" required>
+                        <button type="submit" class="btn btn_check">GET A QUOTE</button>
+                    </form>
+                    <div class="cart_check-total">
+                        <p class="cart_check-subtotal">Subtotal<span>$900</span></p>
+                        <p class="cart_check-grandtotal">Grandtotal<span>$900</span></p>
+                        <hr class="line_cart">
+                        <a href="#" class="btn btn_red-check">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

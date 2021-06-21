@@ -12,7 +12,7 @@ const postcss = require("gulp-postcss");
 const dist = "./dist";
 
 gulp.task("copy-html", () => {
-    return gulp.src("./src/index.html")
+    return gulp.src("./src/*.html")
                 .pipe(gulp.dest(dist))
                 .pipe(browsersync.stream());
 });
@@ -63,7 +63,7 @@ gulp.task("watch", () => {
 		notify: true
     });
     
-    gulp.watch("./src/index.html", gulp.parallel("copy-html"));
+    gulp.watch("./src/*.html", gulp.parallel("copy-html"));
     gulp.watch("./src/js/**/*.js", gulp.parallel("build-js"));
     gulp.watch("./src/scss/**/*.scss", gulp.parallel("build-sass"));
 });
